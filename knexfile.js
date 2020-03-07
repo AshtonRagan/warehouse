@@ -3,7 +3,14 @@
 module.exports = {
   development: {
     client: "pg",
-    connection: "postgresql://localhost/waerhouse-database"
+    connection: "postgresql://localhost/warehouse-database",
+    migrations: {
+      tableName: "knex_migrations",
+      directory: "./database/migrations"
+    },
+    seeds: {
+      directory: "./database/seeds"
+    }
   },
 
   staging: {
