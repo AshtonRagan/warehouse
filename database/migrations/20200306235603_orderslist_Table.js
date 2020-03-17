@@ -28,5 +28,5 @@ exports.up = function(knex) {
 };
 
 exports.down = function(knex) {
-  return knex.schmea.dropTableIfExists("Orderlists");
+  return knex.schema.dropTableIfExists("Orderlists");
 };

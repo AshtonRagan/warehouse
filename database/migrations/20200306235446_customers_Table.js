@@ -11,7 +11,7 @@ exports.up = function(knex) {
       .notNullable()
       .index();
     tbl
-      .enu("payment Type", ["cash", "credit", "cod"])
+      .enu("paymentType", ["cash", "credit", "cod"])
       .notNullable()
       .index()
       .defaultTo("cash");
